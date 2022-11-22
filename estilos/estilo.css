@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container, .productosTienda {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(2, 0.5fr) repeat(3, 2fr) 0.8fr 1.2fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px;
+    grid-auto-flow: column;
+    align-items:stretch;
+    grid-template-areas:
+      "logo"
+      "menu-principal-"
+      "leyenda"
+      "salud"
+      "hogar"
+      "tranquilidad"
+      "mujer"
+      "footer";
+      height: 170rem;
+  }
+  
+.logo {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow:row;
+    grid-template-areas:
+      ". . carrito"
+      ". . buscar"
+      ". . .";
+    grid-area: logo;
+    height: 100px;
+    
+  }
+  main div img {
+    display: inline-block;
+    width: 30rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+   align-content: space-between;}
+  
+.buscar { grid-area: buscar;
+   
+    height: 10px;
+    width: 100px;
+     }
+  
+.carrito { grid-area: carrito;
+    
+    height: 50px;
+    width: 50px; }
+
+.carrito img {
+    width: 15px;
+    }
+  
+
+.menu-principal- { grid-area:            menu-principal-;
+    
+    height: 100px; }
+  
+.leyenda { grid-area: leyenda;
+    
+    height: 200px;}
+  
+.salud { grid-area: salud;
+   ; 
+    height: 400px;}
+  
+.hogar { grid-area: hogar; 
+    
+    height: 400px;}
+  
+.tranquilidad { grid-area: tranquilidad; 
+    
+    height: 400px;}
+  
+.footer { grid-area: footer;
+    
+    height: 200px;}
+  
+.mujer { grid-area: mujer;
+    
+    height: 300px; }
+
+.logo img {
+        width: 200px;
+  
+    }
+.menu {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        background:#f828e7;
+        padding: 30px 40px;
+        font-size: 20px;
+        height: 100px;
+        position: relative;
+    }
+
+.menu  .item > a{
+        
+        color: white;
+        font-weight: bold;
+        background: #2cace4;
+                 
+       }
+
+.menu .item a:hover{
+        background: yellow;
+        color: blue;
+       } 
+.menu .item .submenu  .sub_item{
+        background: yellow;
+        display: none;     
+       }
+   
+.menu .item:hover > .submenu .sub_item{
+        display: block;
+        color: black;
+          
+       }
+   
+.sub_item {
+           
+        list-style: none;
+        justify-content: center;
+        background: grey;
+        font-size: 15px;
+        padding: 30px 15px;
+        font-weight: bold;
+                
+       }
+        
+.item a{
+           
+        text-decoration: none;
+        border-radius: 20%;
+    }   
+.leyenda{
+        background: #2cace4;
+        padding: 1rem;
+        color: white;
+        height: 80px;
+      
+       }
+.leyenda h2{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        }
+
+.salud {
+            background-image: url(../imagenes/Lapiz\ De\ Electroacupuntura.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: color;
+            padding: 20px;
+           }
+p {
+            color: black;
+            font-weight: bold;
+            text-align: justify;
+            padding: 20px;
+           }
+.hogar {
+            background-image: url(../imagenes/Lampara\ ultravioleta.jpg);
+            background-attachment: fixed;
+           }
+       
+.tranquilidad {
+            background-image: url(../imagenes/Mascarilla\ para\ ojos.jpg);
+            background-attachment: fixed;
+           }
+.mujer {
+            background-image: url(../imagenes/Warm\ Palace.jpg);
+            background-attachment: fixed;
+              
+           }
+.principal{
+            display: block;
+            list-style: circle ;
+            padding: 2rem;
+       }
+
+
+   
+.productos{
+        display: block;
+        align-items:center;
+        justify-content:space-between;
+        padding: 50px;
+        border: #f828e7 20px solid;
+       }
+   
+.video{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        }
+.item a{
+        transition: all, 3s ;
+       }
+           
+.item a:hover {
+        width: 40px;
+        height: 20px;
+        border-radius: 50%;
+        background: green;
+       }
+main section h3 .diadema:hover{
+        transform:scale(1.2, 1.2)
+       }
+main section {
+        transition: (all 3s);
+          
+       }
+main section:hover {
+           
+        color: #f828e7;
+        background:radial-gradient(rgb(147, 204, 142), pink, white, orange);
+        transform: scale(1.3, 1.3);
+        padding: 100px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        
+       }
+p:hover{
+           color: blue;
+           text-align: justify;
+           background: linear-gradient(white, yellow);
+           transform: scale(1.2);
+           padding: 4rem;
+   
+       }
+   
+.principal { 
+       
+        color: black;
+        font-weight: bold;
+        text-align: justify;
+        align-content: center;
+        justify-content: center;
+        
+        
+   
+   }
+   @media only screen and (min-width: 480px) {
+   body{background: azure;
+        height: auto;}
+    .container {  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr repeat(2, 0.5fr) repeat(3, 2fr);
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        align-items: stretch;
+        grid-template-areas:
+          "logo logo"
+          "menu-principal- menu-principal-"
+          "leyenda leyenda"
+          "salud hogar"
+          "tranquilidad mujer"
+          "footer footer";
+          gap: 1rem;
+          height: 100rem;
+      }
+      
+.salud { grid-area: salud;
+               height:550px;
+               font-size: 1.5rem; 
+               text-align: justify; }
+      
+.hogar { grid-area: hogar;
+        height:550px;
+        font-size: 1.5rem; 
+        text-align: justify; }
+      
+.tranquilidad { grid-area: tranquilidad;
+        height:550px;
+        font-size: 1.5rem; 
+        text-align: justify; }
+      
+.mujer { grid-area: mujer;
+        height:550px;
+        font-size: 1.5rem; 
+        text-align: justify; }
+      
+.footer { grid-area: footer;
+    height: 100px; }
+      
+.leyenda { grid-area: leyenda;
+        height: 100px; 
+        text-align: justify;
+        font-size: 1.5rem;}
+      
+.menu-principal- { grid-area: menu-principal-; 
+    height: 100px;}
+      
+.logo {  display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . carrito"
+          ". . buscar"
+          ". . .";
+        grid-area: logo;
+        column-gap: 1rem;
+        
+      }
+      
+.carrito { grid-area: carrito;
+        width: 100px;
+        height: 100px; }
+.carrito img{
+        width: 150px;
+      }
+.buscar { grid-area: buscar;
+         width: 175px; 
+         height: 20px;}
+
+.productosTienda{
+    width: 85rem;
+        display: flex;   
+        padding: 1rem;
+         border: #f828e7 20px solid;
+          flex-wrap: wrap;
+          
+        }
+.tienda{
+    display: flex;
+    height:auto;
+    flex-wrap: wrap;
+}
+main div img {
+    display: inline-block;
+    width: 40rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: space-between;
+
+}
+.item6{
+    background: #2cace4;
+   
+    display: inline-block;
+    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+   }
+.tabla1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+        }

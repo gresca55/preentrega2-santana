@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"> <img src="../imagenes/remove.png" alt="">
+          <div class="buscar"><input type="search" placeholder="¿Qué deseas buscar?"></div>
+          <div class="carrito"><img src="../imagenes/CARRITO-removebg-preview.png" alt=""></div>
+        </div>
+        <div class="menu-principal-">
+            <ul class="menu">
+                <li class="item animate__animated animate__heartBeat"><a href="../vistas/mypagina.html">Inicio</a></li>
+                <li class="item"><a href="./nosotros.html">Nosotros</a></li> 
+                <li class="item"><a href="./tienda.html">Tienda</a> 
+                      <ul class="submenu">
+                         <li class="sub_item"> <a href="../views/tienda.html">DIADEMA</a> </li>
+                         <li class="sub_item"> <a href="../views/tienda.html">WARM PALACE</a></li>
+                         <li class="sub_item"> <a href="../views/tienda.html">ELECTROACUPUNTURA</a>  </li>
+                         <li class="sub_item"> <a href="../views/tienda.html">LAMPARA ULTRAVIOLETA</a> </li>
+                         <li class="sub_item"> <a href="../views/tienda.html">EAGLE BRAND</a>  </li>
+                         <li class="sub_item"> <a href="../views/tienda.html">MASCARILLA CALIENTE</a>  </li>
+                      </ul> 
+                 </li>
+                 <li class="item"><a href="./salud.html">Salud</a></li>
+                 <li class="item"><a href="./contactenos.html">Contactenos</a></li>
+            </ul>
+        </div>
+        <form>
+            <fieldset>
+              <legend>Informacion personal</legend>
+                <label for="sexo">elige tu genero</label>
+                <input type="radio" name="sexo" value="muj">mujer
+                <input type="radio" name="sexo" value="hoom">hombre
+                <input type="radio" name="sexo" value="nob">No binario
+                <div>
+                   <label for="Name">Escribe tu nombre</label> 
+                    <input type="text" name="name" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="surName">Escribe tu apellido</label> 
+                     <input type="text" name="surname" placeholder="Apellido">
+                 </div>
+                 <div>
+                    <label for="mail">E-mail</label> 
+                     <input type="email" name="mail" placeholder="email">
+                 </div>
+                 <div>
+                    <label for="size">talla</label> 
+                     <select name="size" id="">
+                     <option value="S">small</option>
+                     <option value="M">medio</option>
+                     <option value="l">Largo</option>
+                    </select>
+                 </div>
+                 <div>
+                    <input type="submit"Enviar>
+                 </div>
+            </fieldset>
+          </form>
+      </div>
+</body>
+</html>
